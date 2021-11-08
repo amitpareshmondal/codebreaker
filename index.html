@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -18,20 +19,20 @@
      <!--Navbar start-->
      <div class="TopDiv">
         <nav class="navbar navbar-expand-md  navbar-dark navbar-custom">
-            <a class="navbar-brand" href="#" style="font-family: 'Black Ops One', cursive; font-size:x-large;">CodeBreakers</a>
+            <a class="navbar-brand" href="index.html" style="font-family: 'Black Ops One', cursive; font-size:x-large;">CodeBreakers</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#achi">Achievements</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="achievement.html">Achievements</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="events.html">Events</a>
                 </li>    
               </ul>
             </div>  
@@ -42,7 +43,7 @@
         <img src="logo.jpg" alt="" class="main-logo" >
      </div>
      <div class="main-heading-div">
-        <h1 class="main-heading typewriter" >A</h1>
+        <h1 class="main-heading typewriter" ></h1>
      </div>
      <div class="icons">
         <i class="fa-brands fa-instagram"></i>&nbsp;
@@ -108,14 +109,25 @@
     </div> -->
     <!--Achievements end-->
     <!--Events-->
-    <div class="events">
+    <div class="Achievements" data-aos="fade-right">
+      <div class="AchievementsHeading">
+        <h2>Achievements</h2><br>
+        <br>
+      </div>
+      <div class="AchievementsContent">
+        <p><a href="achievement.html">Click here</a> to visit achievements section</p>
+        <br> <br> 
+      </div>
+    </div>
+    <div class="events" data-aos="fade-right">
       <div class="events_heading_div">
         <h1 class="events_heading">Events</h1>
       </div>
+      <br>
       <div class="currentEvent">
         Web design event on 9th November 2021 <br> Currently no event is going on
       </div>
-      <br><br><br><br>
+     <br>
       <div class="pastEvents">
         To see Our Past events <a href="">click here</a> 
       </div>
@@ -147,5 +159,11 @@ function typeWriter() {
 }
 window.onload=typeWriter();
 
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300
+  });
 </script>
 </html>

@@ -1,5 +1,5 @@
 body{
-  background-image: url(trail2.jpg);
+  background-image: url(back4.jpg);
   background-position: center;
   background-attachment: fixed;
 
@@ -126,12 +126,12 @@ i{
     right: 60px; 
   }
  
-  .achievement{
+  /* .achievement{
     margin-top: 10vh;
     /* background-image: url("back3.jpg"); */
-    background-attachment: fixed;
-    height: 120vh;
-  }
+    /* background-attachment: fixed; */
+    /* height: 120vh; */
+  /* }
   .achievement_heading_div{
     margin-top: 20vh;
     font-family: 'Black Ops One', cursive;
@@ -145,9 +145,9 @@ i{
 .achievement_image{
   margin-left: 10%;
   margin-right: 10%;  
-}
+} */ */
 .events{
-  /* background-image: url("back2_1.jpg"); */
+  
   height: 80vh;
   background-attachment: fixed;
 }
@@ -186,6 +186,7 @@ footer{
   text-align: center;
   color: white;
   font-size: 0.8rem;
+  margin-top: 20%;
 }
 .footer_img{
   height: 80px;
@@ -193,6 +194,28 @@ footer{
   border-radius: 50%;
   position: relative;
   top: 10%;
+}
+.AchievementsHeading{
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: orange;
+  margin-bottom: 5%;
+}
+.AchievementsContent{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  width: 50%;
+  position: relative;
+  left: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  text-align: center;
+}
+.Achievements{
+   margin-bottom: 20%;
 }
 @media (max-width: 800px) {
   .flex-container2{
@@ -230,5 +253,11 @@ footer{
       left: 10%;
       right: 10%;
      height: 16.25%;
+    }
+    .AchievementsContent{
+      width: 80%;
+      position: relative;
+      left: 10%;
+      right: 10%;
     }
 }
